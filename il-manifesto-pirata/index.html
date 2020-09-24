@@ -13,10 +13,8 @@
 
 <link rel="stylesheet" id="wp-block-library-css" href="http://www.toscanapirata.it/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
 <link rel="stylesheet" id="pirate-rogue-style-css" href="http://www.toscanapirata.it/wp-content/themes/Pirate-Rogue/style.css" type="text/css" media="all">
-<script type="text/javascript" src="http://www.toscanapirata.it/wp-includes/js/jquery/jquery.js"></script>
-<script type="text/javascript" src="http://www.toscanapirata.it/wp-includes/js/jquery/jquery-migrate.min.js"></script>
-<script type="text/javascript" src="http://www.toscanapirata.it/wp-content/themes/Pirate-Rogue/js/jquery.misc.js"></script>
-
+<script type="text/javascript" src="http://www.toscanapirata.it/wp-includes/js/jquery/jquery.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="http://www.toscanapirata.it/wp-content/themes/Pirate-Rogue/js/jquery.misc.js" id="pirate-rogue-jquery-misc-js"></script>
 
 
 
@@ -45,7 +43,7 @@
                             <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><link itemprop="contentUrl url" href="http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top.png"><meta itemprop="width" content="2500"><meta itemprop="height" content="656"></div><meta itemprop="name" content="Toscana Pirata"><link itemprop="url" href="http://www.toscanapirata.it/">                                                                <p class="site-title"><a href="http://www.toscanapirata.it/" rel="home">Toscana Pirata</a></p>
                             
                                                                 <div class="custom-logo-wrap">
-                                        <a href="http://www.toscanapirata.it/" rel="home" class="custom-logo-link"><img width="2500" height="656" src="http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top.png" class="custom-logo" alt="" srcset="http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top.png 2500w,http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top-300x79.png 300w,http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top-1024x269.png 1024w,http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top-768x202.png 768w,http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top-1536x403.png 1536w,http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top-2048x537.png 2048w" sizes="(max-width: 2500px) 100vw, 2500px"></a>                                        
+                                        <a href="http://www.toscanapirata.it/" rel="home" class="custom-logo-link"><img width="2500" height="656" src="http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top.png" class="custom-logo" alt="" loading="lazy" srcset="http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top.png 2500w,http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top-300x79.png 300w,http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top-1024x269.png 1024w,http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top-768x202.png 768w,http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top-1536x403.png 1536w,http://www.toscanapirata.it/wp-content/uploads/2020/08/header_top-2048x537.png 2048w" sizes="(max-width: 2500px) 100vw, 2500px"></a>                                        
                                      </div>
                              
                             <p class="site-description">Libertà, conoscenza, condivisione. In Toscana.</p>
@@ -104,7 +102,7 @@
 
     <div class="content-wrap">
 		<div class="entry-thumbnail">
-		<a href="http://www.toscanapirata.it/il-manifesto-pirata/"><img width="1600" height="667" src="http://www.toscanapirata.it/wp-content/uploads/2020/08/pirata_header.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://www.toscanapirata.it/wp-content/uploads/2020/08/pirata_header.jpg 1600w,http://www.toscanapirata.it/wp-content/uploads/2020/08/pirata_header-300x125.jpg 300w,http://www.toscanapirata.it/wp-content/uploads/2020/08/pirata_header-1024x427.jpg 1024w,http://www.toscanapirata.it/wp-content/uploads/2020/08/pirata_header-768x320.jpg 768w,http://www.toscanapirata.it/wp-content/uploads/2020/08/pirata_header-1536x640.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px"></a>
+		<a href="http://www.toscanapirata.it/il-manifesto-pirata/"><img width="1600" height="667" src="http://www.toscanapirata.it/wp-content/uploads/2020/08/pirata_header.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="http://www.toscanapirata.it/wp-content/uploads/2020/08/pirata_header.jpg 1600w,http://www.toscanapirata.it/wp-content/uploads/2020/08/pirata_header-300x125.jpg 300w,http://www.toscanapirata.it/wp-content/uploads/2020/08/pirata_header-1024x427.jpg 1024w,http://www.toscanapirata.it/wp-content/uploads/2020/08/pirata_header-768x320.jpg 768w,http://www.toscanapirata.it/wp-content/uploads/2020/08/pirata_header-1536x640.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px"></a>
 	</div>
 	
 	<div id="blog-wrap" class="blog-wrap cf">
@@ -239,7 +237,13 @@
 		</div>
             
 <aside id="sidebar-page" class="sidebar-page widget-area">
-    		<section id="recent-posts-3" class="widget widget_recent_entries">		<h2 class="widget-title">Ultimi articoli</h2>		<ul>
+    
+		<section id="recent-posts-3" class="widget widget_recent_entries">
+		<h2 class="widget-title">Ultimi articoli</h2>
+		<ul>
+											<li>
+					<a href="http://www.toscanapirata.it/2020/09/un-milione-di-firme-per-luniversal-basic-income/">Un milione di firme per l’Universal Basic Income</a>
+									</li>
 											<li>
 					<a href="http://www.toscanapirata.it/2020/08/fuori-dal-pantano-delle-licenze-duso-il-comune-di-cento-punta-al-software-libero/">Fuori dal pantano delle licenze d’uso, il Comune di Cento punta al software libero</a>
 									</li>
@@ -252,10 +256,8 @@
 											<li>
 					<a href="http://www.toscanapirata.it/2020/06/rammaricati-dalla-posizione-dellaie-in-merito-alla-chiusura-di-project-gutenberg/">Rammaricati dalla posizione dell’AIE in merito alla chiusura di Project Gutenberg</a>
 									</li>
-											<li>
-					<a href="http://www.toscanapirata.it/2020/06/basta-classi-pollaio-smettiamo-di-gestire-la-scuola-come-fossero-polli/">Basta classi pollaio? Smettiamo di gestire la scuola come fossero polli!</a>
-									</li>
 					</ul>
+
 		</section></aside>
 	</div>
     </div>
@@ -312,12 +314,12 @@
 	</footer>
 </div>
 
-<script type="text/javascript">
+<script type="text/javascript" id="pirate-rogue-script-js-extra">
 /* <![CDATA[ */
 var screenReaderText = {"expand":"<span class=\"screen-reader-text\">Expand Child Menu<\/span>","collapse":"<span class=\"screen-reader-text\">Collapse Child Menu<\/span>"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="http://www.toscanapirata.it/wp-content/themes/Pirate-Rogue/js/functions.min.js"></script>
+<script type="text/javascript" src="http://www.toscanapirata.it/wp-content/themes/Pirate-Rogue/js/functions.min.js" id="pirate-rogue-script-js"></script>
 
 </body>
 </html>
